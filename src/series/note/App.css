@@ -1,0 +1,99 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 3rem;
+  display: flex;
+  gap: 0.5rem;
+  height: 100vh;
+  background-color: #1d3557;
+  color: rgb(221, 253, 237);
+  font-family: roboto;
+  width: 100%;
+}
+
+.note_app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_name {
+  padding: 1rem;
+  background-color: tomato;
+  margin: 0 -2rem;
+  border-radius: 5px;
+}
+
+.name_icon {
+  padding-right: 0.3rem;
+}
+
+.creat_note {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  max-width: 20rem;
+  align-self: center;
+}
+
+.note_text,
+.note_title {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0 0 0.5rem;
+  border-radius: 5px;
+  resize: none;
+}
+
+.add_note {
+  color: #00909b;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  margin-top: -2rem;
+  margin-right: -0.5rem;
+  z-index: 11;
+  box-shadow: 1px 1px 2px 1px rgb(49, 49, 49);
+  cursor: pointer;
+}
+
+.note_render {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  color: #353535;
+}
+
+.note_item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  width: 10rem;
+  height: 4rem;
+
+}
+
+.note_item i {
+  color: rgb(255, 50, 50);
+  align-self: flex-end;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

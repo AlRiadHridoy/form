@@ -1,0 +1,118 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  background-color: #1d3557;
+  color: rgb(221, 253, 237);
+  font-family: roboto;
+}
+
+.to_do {
+  width: 12rem;
+  height: 16rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.to_do h3 {
+  background-color: tomato;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.add_item {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #b2cada;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+  background-color: transparent;
+  width: 100%;
+  max-width: 8rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+input:focus {
+  border-bottom: 2px solid #457b9d;
+}
+
+input::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+button {
+  padding: 0 rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  font-size: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  max-width: 100%;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #007f5f;
+}
+
+ol {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+ol li {
+  color: #457b9d;
+  list-style: none;
+  padding-left: 1rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+span {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
+span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #457b9d;
+  min-width: 1rem;
+  min-height: 1rem;
+  border-radius: 50%;
+  color: white;
+}

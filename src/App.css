@@ -1,0 +1,10 @@
+.input_style {
+    @apply  bg-transparent appearance-none border-b border-gray-400 focus:border-sky-300 pb-1
+    focus:outline-none focus:outline-1;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+}
